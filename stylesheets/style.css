@@ -1,0 +1,180 @@
+/* HOJA DE ESTILO GENERAL */
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+/*       INDEX       */
+
+
+/*------------------------------
+
+               HEADER
+
+---------------------------------*/
+
+header {
+	height: 50px;
+	max-width: 100%;
+	background-color: saddlebrown;
+}
+
+/*------------------------------
+
+               CONTAINER
+
+---------------------------------*/
+
+.container {
+	height: auto;
+	max-width: 100%;
+	background-color: mediumpurple;
+}
+
+/*------------------------------
+
+               INTRO
+
+---------------------------------*/
+
+.introcon {
+	height: 1080px;
+	width: 100%;
+	background-color: royalblue;
+}
+
+/*------------------------------
+
+               WHO
+
+---------------------------------*/
+
+.whocon {
+	height: 300px;
+	width: 100%;
+	background-color: chartreuse;
+}
+
+.whobox {
+	height: 299px;
+	width: 1280px;
+	margin: auto;
+	background-color: deepskyblue;
+}
+
+/*------------------------------
+
+               HOW
+
+---------------------------------*/
+
+.howcon {
+	height: 600px;
+	width: 100%;
+	background-color: red;
+}
+
+.howbox {
+	height: 599px;
+	width: 1280px;
+	margin: auto;
+	background-color: navajowhite;
+}
+
+.design-box1 {
+	height: 200px;
+	width: 1280px;
+	background-color: navajowhite;
+}
+
+.design-box2 {
+	height: 200px;
+	width: 0;
+	float: left;
+	background-color: firebrick;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.prueba {
+	height: 100px;
+	width: 100px;
+	margin: auto;
+	opacity: 0;
+	background-color: purple;
+	-webkit-transition: all 0.6s;
+	transition: all 0.6s;
+}
+
+.dev-box {
+	height: 200px;
+	width: 0;
+	margin-top: 10px;
+	float: right;
+	background-color: lime;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.howbox:hover .design-box2{
+	width: 1280px;
+}
+
+.howbox:hover .dev-box{
+	width: 1280px;
+}
+
+.howbox:hover .prueba {
+	opacity: 1;
+}
+
+.prueba:hover {
+	background-color: orange;
+}
+
+/*------------------------------
+
+               WHAT
+
+---------------------------------*/
+
+.whatcon {
+	height: 300px;
+	width: 100%;
+	background-color: darkorange;
+}
+
+.whatbox {
+	height: 299px;
+	width: 1280px;
+	margin: auto;
+	background-color: darkslategrey;
+}
+
+/*------------------------------
+
+               WHERE
+
+---------------------------------*/
+
+.wherecon {
+	height: 200px;
+	width: 100%;
+	background-color: dimgray;
+}
+
+/*------------------------------
+
+               FOOTER
+
+---------------------------------*/
+
+footer {
+	height: 200px;
+	max-width: 100%;
+	background-color: lightsteelblue;
+}
+
+

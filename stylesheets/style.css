@@ -1,4 +1,13 @@
-/* HOJA DE ESTILO GENERAL */
+/* GENERAL STYLESHEET */
+
+
+
+/*--------------------------------
+  
+            COMMON VALUES 
+
+---------------------------------*/
+
 
 * {
 	padding: 0;
@@ -6,26 +15,31 @@
 	box-sizing: border-box;
 }
 
-/*       INDEX       */
-
-
-/*------------------------------
-
-               HEADER
-
----------------------------------*/
+/*---------- HEADER -------------*/
 
 header {
-	height: 50px;
 	max-width: 100%;
-	background-color: saddlebrown;
+	background-color: transparent;
 }
 
-/*------------------------------
+.head {
+	max-width: 1280px;
+}
 
-               CONTAINER
+nav {
+	max-height: 50px;
+	max-width: 500px;
+	z-index: 101;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	position: fixed;
+	background-color: #424242;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
----------------------------------*/
+/*-------- CONTAINER ------------*/
 
 .container {
 	height: auto;
@@ -33,65 +47,132 @@ header {
 	background-color: mediumpurple;
 }
 
-/*------------------------------
+/*---------- FOOTER ------------*/
 
-               INTRO
+footer {
+	height: 200px;
+	max-width: 100%;
+	background-color: black;
+}
 
----------------------------------*/
+.foot {
+	max-width: 1280px;
+	margin: auto;
+}
 
-.introcon {
-	height: 1080px;
-	width: 100%;
-	background-color: royalblue;
+.footnav {
+	height: auto;
+	max-width: 500px;
+	z-index: 101;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+
+nav ul, .footnav ul {
+	list-style-type: none;
+	display: flex;
+	align-items: center;
+}
+
+nav ul li, .footnav ul li {
+	float: left;
+	flex-grow: 1;
+}
+
+nav a, .footnav a {
+	padding-top: 7px;
+	padding-bottom: 10px;
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	color: #fafafa;
+	font-family: 'Roboto', sans-serif;
+}
+
+nav img {
+	height: 35px;
+	width: auto;
+}
+
+.footnav img {
+	height: 50px;
+	width: auto;
 }
 
 /*------------------------------
 
-               WHO
+            INDEX      
 
----------------------------------*/
+-------------------------------*/
+
+
+
+/*--------- INTRO ------------*/
+
+.introcon {
+	height: auto;
+	width: 100%;
+}
+
+.poemcon {
+	height: auto;
+	max-width: 500px;
+	margin: auto;
+	text-align: center;
+	z-index: 1
+}
+
+.poemcon p {
+	font-family: 'Roboto', sans-serif;
+	font-style: italic;
+	font-size: 1vw;
+	color: #fafafa;
+}
+
+/*---------- WHO --------------*/
 
 .whocon {
 	height: 300px;
 	width: 100%;
-	background-color: chartreuse;
+	background-image: url(../img/background.jpg);
 }
 
 .whobox {
 	height: 299px;
-	width: 1280px;
+	max-width: 1280px;
 	margin: auto;
 	background-color: deepskyblue;
 }
 
-/*------------------------------
-
-               HOW
-
----------------------------------*/
+/*----------- HOW --------------*/
 
 .howcon {
 	height: 600px;
 	width: 100%;
-	background-color: red;
+	background-image: url(../img/background.jpg);
 }
 
 .howbox {
 	height: 599px;
-	width: 1280px;
+	max-width: 1280px;
 	margin: auto;
 	background-color: navajowhite;
 }
 
 .design-box1 {
 	height: 200px;
-	width: 1280px;
+	max-width: 1280px;
+	margin: auto;
 	background-color: navajowhite;
 }
 
 .design-box2 {
 	height: 200px;
 	width: 0;
+	margin: auto;
 	float: left;
 	background-color: firebrick;
 	-webkit-transition: all 0.5s;
@@ -119,11 +200,11 @@ header {
 }
 
 .howbox:hover .design-box2{
-	width: 1280px;
+	width: 100%;
 }
 
 .howbox:hover .dev-box{
-	width: 1280px;
+	width: 100%;
 }
 
 .howbox:hover .prueba {
@@ -134,47 +215,28 @@ header {
 	background-color: orange;
 }
 
-/*------------------------------
-
-               WHAT
-
----------------------------------*/
+/*------------ WHAT -------------*/
 
 .whatcon {
 	height: 300px;
 	width: 100%;
-	background-color: darkorange;
+	background-image: url(../img/background.jpg);
 }
 
 .whatbox {
 	height: 299px;
-	width: 1280px;
+	max-width: 1280px;
 	margin: auto;
 	background-color: darkslategrey;
 }
 
-/*------------------------------
-
-               WHERE
-
----------------------------------*/
+/*---------- WHERE --------------*/
 
 .wherecon {
 	height: 200px;
 	width: 100%;
-	background-color: dimgray;
+	background-image: url(../img/background-where.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
 }
-
-/*------------------------------
-
-               FOOTER
-
----------------------------------*/
-
-footer {
-	height: 200px;
-	max-width: 100%;
-	background-color: lightsteelblue;
-}
-
 

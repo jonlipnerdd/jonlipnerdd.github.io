@@ -15,6 +15,18 @@
 	box-sizing: border-box;
 }
 
+h2 {
+	font-family: 'Montserrat', sans-serif;
+	color: #fafafa;
+	text-align: center;
+}
+
+p {
+	font-family: 'Roboto', sans-serif;
+	color: #fafafa;
+	text-align: center;
+}
+
 /*---------- HEADER -------------*/
 
 header {
@@ -44,8 +56,37 @@ nav {
 .container {
 	height: auto;
 	max-width: 100%;
-	background-color: mediumpurple;
+	background-image: url(../img/background2.jpg);
+	background-repeat: repeat-y;
+	background-position: center;
 }
+
+.container a {
+	height: auto;
+	width: 200px;
+	font-family: 'Montserrat', sans-serif;
+	color: #fafafa;
+	font-size: 1em;
+	text-align: center;
+	text-decoration: none;
+	padding: 7px;
+	border: 3px solid #fafafa;
+	display: block;
+	margin: auto;
+	-webkit-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+.container a:hover {
+	background-color: dodgerblue;
+	border: 3px solid dodgerblue;
+}
+
+/*.container a:visited {
+	background-color: #fafafa;
+	border: 3px solid #fafafa;
+	color: midnightblue;
+}*/
 
 /*---------- FOOTER ------------*/
 
@@ -115,6 +156,10 @@ nav img {
 .introcon {
 	height: auto;
 	width: 100%;
+	background-image: url(../img/index/cover2.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
 }
 
 .poemcon {
@@ -134,49 +179,40 @@ nav img {
 
 /*---------- WHO --------------*/
 
-.whocon {
-	height: 300px;
-	width: 100%;
-	background-image: url(../img/background.jpg);
-}
-
 .whobox {
 	height: 299px;
 	max-width: 1280px;
 	margin: auto;
-	background-color: deepskyblue;
+	background-color: midnightblue;
 }
 
 /*----------- HOW --------------*/
-
-.howcon {
-	height: 600px;
-	width: 100%;
-	background-image: url(../img/background.jpg);
-}
 
 .howbox {
 	height: 599px;
 	max-width: 1280px;
 	margin: auto;
-	background-color: navajowhite;
+	background-color: midnightblue;
 }
 
-.design-box1 {
+.design-devbox {
 	height: 200px;
 	max-width: 1280px;
 	margin: auto;
-	background-color: navajowhite;
+	background-color: midnightblue;
 }
 
-.design-box2 {
+.desdev-box {
 	height: 200px;
 	width: 0;
 	margin: auto;
-	float: left;
 	background-color: firebrick;
 	-webkit-transition: all 0.5s;
 	transition: all 0.5s;
+}
+
+.left {
+	float: left;
 }
 
 .prueba {
@@ -189,21 +225,11 @@ nav img {
 	transition: all 0.6s;
 }
 
-.dev-box {
-	height: 200px;
-	width: 0;
-	margin-top: 10px;
+.right {
 	float: right;
-	background-color: lime;
-	-webkit-transition: all 0.5s;
-	transition: all 0.5s;
 }
 
-.howbox:hover .design-box2{
-	width: 100%;
-}
-
-.howbox:hover .dev-box{
+.howbox:hover .desdev-box {
 	width: 100%;
 }
 
@@ -217,17 +243,11 @@ nav img {
 
 /*------------ WHAT -------------*/
 
-.whatcon {
-	height: 300px;
-	width: 100%;
-	background-image: url(../img/background.jpg);
-}
-
 .whatbox {
 	height: 299px;
 	max-width: 1280px;
 	margin: auto;
-	background-color: darkslategrey;
+	background-color: midnightblue;
 }
 
 /*---------- WHERE --------------*/

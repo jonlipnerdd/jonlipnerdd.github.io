@@ -28,6 +28,13 @@ p {
 	text-align: center;
 }
 
+.bodytext {
+	height: auto;
+	max-width: 600px;
+	margin: auto;
+	padding-bottom: 35px;
+}
+
 /*---------- HEADER -------------*/
 
 header {
@@ -85,33 +92,28 @@ nav {
 	border: 3px solid dodgerblue;
 }
 
-/*.container a:visited {
-	background-color: #fafafa;
-	border: 3px solid #fafafa;
-	color: midnightblue;
-}*/
-
 /*---------- FOOTER ------------*/
 
 footer {
-	height: 200px;
+	height: auto;
 	max-width: 100%;
 	background-color: black;
 }
 
 .foot {
-	max-width: 1280px;
+	max-width: 1120px;
 	margin: auto;
 }
 
 .footnav {
 	height: auto;
 	max-width: 500px;
-	z-index: 101;
 	top: 0;
 	left: 0;
 	right: 0;
 	margin: auto;
+	padding-top: 50px;
+	padding-bottom: 30px;
 }
 
 
@@ -144,6 +146,11 @@ nav img {
 .footnav img {
 	height: 50px;
 	width: auto;
+}
+
+footer p {
+	padding-bottom: 30px;
+	font-size: 0.7em;
 }
 
 /*------------------------------
@@ -186,7 +193,7 @@ nav img {
 	height: auto;
 	max-width: 800px;
 	margin: auto;
-	padding-bottom: 30px;
+	padding-bottom: 40px;
 	background-color: midnightblue;
 }
 
@@ -220,46 +227,75 @@ nav img {
                0 20px 20px rgba(0,0,0,.15);
 }
 
-.whotext {
-	height: auto;
-	max-width: 700px;
-	margin: auto;
-	padding-bottom: 30px;
-}
-
 /*----------- HOW --------------*/
 
 .howbox {
 	height: auto;
-	max-width: 1280px;
+	max-width: 1120px;
 	margin: auto;
-	padding-bottom: 30px;
+	padding-bottom: 40px;
 	position: relative;
-	background-color: midnightblue;
+	background-color: #1f1f8c;
 	z-index: 20;
 	-moz-box-shadow: 
-	0 -6px 9px 0 rgba(0, 0, 0, 0.2), 0 -9px 30px 0 rgba(0, 0, 0, 0.19), 
-	0 6px 9px 0 rgba(0, 0, 0, 0.2), 0 9px 30px 0 rgba(0, 0, 0, 0.19);
+	0 6px 1px rgba(0,0,0,.1),
+            0 0 5px rgba(0,0,0,.1),
+            0 1px 3px rgba(0,0,0,.3),
+            0 3px 5px rgba(0,0,0,.2),
+            0 5px 10px rgba(0,0,0,.25),
+            0 10px 10px rgba(0,0,0,.2),
+            0 20px 20px rgba(0,0,0,.15),
+            0 -6px 1px rgba(0,0,0,.1),
+            0 0 5px rgba(0,0,0,.1),
+            0 -1px 3px rgba(0,0,0,.3),
+            0 -3px 5px rgba(0,0,0,.2),
+            0 -5px 10px rgba(0,0,0,.25),
+            0 -10px 10px rgba(0,0,0,.2),
+            0 -20px 20px rgba(0,0,0,.15);;
   	-webkit-box-shadow: 
-  	0 -6px 9px 0 rgba(0, 0, 0, 0.2), 0 -9px 30px 0 rgba(0, 0, 0, 0.19),
-  	0 6px 9px 0 rgba(0, 0, 0, 0.2), 0 9px 30px 0 rgba(0, 0, 0, 0.19);
+  	0 6px 1px rgba(0,0,0,.1),
+            0 0 5px rgba(0,0,0,.1),
+            0 1px 3px rgba(0,0,0,.3),
+            0 3px 5px rgba(0,0,0,.2),
+            0 5px 10px rgba(0,0,0,.25),
+            0 10px 10px rgba(0,0,0,.2),
+            0 20px 20px rgba(0,0,0,.15),
+            0 -6px 1px rgba(0,0,0,.1),
+            0 0 5px rgba(0,0,0,.1),
+            0 -1px 3px rgba(0,0,0,.3),
+            0 -3px 5px rgba(0,0,0,.2),
+            0 -5px 10px rgba(0,0,0,.25),
+            0 -10px 10px rgba(0,0,0,.2),
+            0 -20px 20px rgba(0,0,0,.15);;
   	box-shadow: 
-  	0 -6px 9px 0 rgba(0, 0, 0, 0.2), 0 -9px 30px 0 rgba(0, 0, 0, 0.19),
-  	0 6px 9px 0 rgba(0, 0, 0, 0.2), 0 9px 30px 0 rgba(0, 0, 0, 0.19);
+  			0 6px 1px rgba(0,0,0,.1),
+            0 0 5px rgba(0,0,0,.1),
+            0 1px 3px rgba(0,0,0,.3),
+            0 3px 5px rgba(0,0,0,.2),
+            0 5px 10px rgba(0,0,0,.25),
+            0 10px 10px rgba(0,0,0,.2),
+            0 20px 20px rgba(0,0,0,.15),
+            0 -6px 1px rgba(0,0,0,.1),
+            0 0 5px rgba(0,0,0,.1),
+            0 -1px 3px rgba(0,0,0,.3),
+            0 -3px 5px rgba(0,0,0,.2),
+            0 -5px 10px rgba(0,0,0,.25),
+            0 -10px 10px rgba(0,0,0,.2),
+            0 -20px 20px rgba(0,0,0,.15);
 }
 
 .design-devbox {
 	height: 200px;
-	max-width: 1280px;
+	max-width: 1120px;
 	margin: auto;
-	background-color: midnightblue;
+	background-color: #1f1f8c;
 }
 
 .desdev-box {
 	height: 200px;
 	width: 0;
 	margin: auto;
-	background-color: firebrick;
+	background-color: #1f1f8c;
 	-webkit-transition: all 0.5s;
 	transition: all 0.5s;
 }
@@ -282,8 +318,20 @@ nav img {
 	float: right;
 }
 
+.howbox .bodytext {
+	padding-top: 35px;
+}
+
 .howbox:hover .desdev-box {
 	width: 100%;
+	background-color: #2525a8;
+	box-shadow: 0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
 }
 
 .howbox:hover .prueba {
@@ -330,7 +378,7 @@ nav img {
 	height: auto;
 	max-width: 800px;
 	margin: auto;
-	padding-bottom: 30px;
+	padding-bottom: 40px;
 	position: relative;
 	background-color: midnightblue;
 }
@@ -370,7 +418,7 @@ nav img {
 .wherecon {
 	height: auto;
 	width: 100%;
-	padding-bottom: 30px;
+	padding-bottom: 40px;
 	position: relative;
 	background-image: url(../img/background-where.jpg);
 	background-position: center;

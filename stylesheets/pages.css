@@ -1,0 +1,158 @@
+/*------------------------------
+
+            INDEX      
+
+-------------------------------*/
+
+
+
+/*--------- INTRO ------------*/
+
+.introcon {
+	height: auto;
+	width: 100%;
+	background-image: url(../img/index/cover2.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+
+.poemcon {
+	height: auto;
+	max-width: 500px;
+	margin: auto;
+	text-align: center;
+	z-index: 1
+}
+
+.poemcon p {
+	font-family: 'Cabin', sans-serif;
+	font-style: italic;
+	font-size: 1vw;
+	color: #fafafa;
+}
+
+/*---------- WHO --------------*/
+
+.whobox {
+	height: auto;
+	max-width: 800px;
+}
+
+
+/*----------- HOW --------------*/
+
+.howbox {
+	height: auto;
+	max-width: 1120px;	
+}
+
+.design-devbox {
+	height: 200px;
+	max-width: 1120px;
+	margin: auto;
+	background-color: #1f1f8c;
+}
+
+.desdev-box {
+	height: 200px;
+	width: 0;
+	margin: auto;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.howbox .bodytext {
+	padding-top: 35px;
+}
+
+.howbox:hover .desdev-box {
+	width: 100%;
+	
+}
+
+/*------------ WHAT -------------*/
+
+.whatbox {
+	height: auto;
+	max-width: 800px;
+}
+
+
+/*---------- WHERE --------------*/
+
+.wherecon {
+	height: auto;
+	width: 100%;
+	padding-bottom: 40px;
+	position: relative;
+	background-image: url(../img/background-where.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	-moz-box-shadow: 
+	0 -6px 9px 0 rgba(0, 0, 0, 0.2), 0 -9px 30px 0 rgba(0, 0, 0, 0.19), 
+	0 6px 9px 0 rgba(0, 0, 0, 0.2), 0 9px 30px 0 rgba(0, 0, 0, 0.19);
+  	-webkit-box-shadow: 
+  	0 -6px 9px 0 rgba(0, 0, 0, 0.2), 0 -9px 30px 0 rgba(0, 0, 0, 0.19),
+  	0 6px 9px 0 rgba(0, 0, 0, 0.2), 0 9px 30px 0 rgba(0, 0, 0, 0.19);
+  	box-shadow: 
+  	0 -6px 9px 0 rgba(0, 0, 0, 0.2), 0 -9px 30px 0 rgba(0, 0, 0, 0.19),
+  	0 6px 9px 0 rgba(0, 0, 0, 0.2), 0 9px 30px 0 rgba(0, 0, 0, 0.19);
+}
+
+.wherebutton {
+	height: auto;
+	max-width: 280px;
+	margin: auto;
+}
+
+.wherebutton a {
+	height: auto;
+	width: auto;
+}
+
+/*------------------------------
+
+            WHAT      
+
+-------------------------------*/
+
+
+/*------------ PROJECTS -------------*/
+
+.what .howbox {
+	height: 100px;
+	max-width: 480px;
+	background-color: #2525a8;
+}
+
+
+
+/*------------ DESCRIPTION -------------*/
+
+.descriptcon {
+	height: 500px;
+	max-width: 1120px;
+	margin: auto;
+	background-color: #1f1f8c;
+}
+
+.sample{
+	height: auto;
+	max-width: 70%;
+	margin: auto;
+}
+
+.descriptbox{
+	height: auto;
+	max-width: 30%;
+	margin: auto;
+}

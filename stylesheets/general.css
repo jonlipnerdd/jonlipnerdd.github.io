@@ -153,6 +153,7 @@ header {
 }
 
 .levelthree {
+	margin: auto;
 	background-color: #2525a8;
 	box-shadow: 0 6px 1px rgba(0,0,0,.1),
                0 0 5px rgba(0,0,0,.1),

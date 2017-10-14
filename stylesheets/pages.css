@@ -131,28 +131,61 @@
 .what .howbox {
 	height: 100px;
 	max-width: 480px;
+	z-index: 25;
+	position: relative;
 	background-color: #2525a8;
 }
-
 
 
 /*------------ DESCRIPTION -------------*/
 
 .descriptcon {
-	height: 500px;
+	height: auto;
 	max-width: 1120px;
-	margin: auto;
 	background-color: #1f1f8c;
 }
 
-.sample{
+.descriptimg{
 	height: auto;
 	max-width: 70%;
 	margin: auto;
+}
+
+.sampleviews {
+	width: 300px;
 }
 
 .descriptbox{
 	height: auto;
 	max-width: 30%;
 	margin: auto;
+}
+
+
+/*------------------------------
+
+            HOW      
+
+-------------------------------*/
+
+/*------------ SKILLS/TOOLS -------------*/
+
+.magicboxcon {
+	height: auto;
+	width: 960px;
+	position: relative;
+}
+
+.magicbox {
+	height: auto;
+	width: 50%;
+}
+
+.outer {
+	height: 200px;
+	width: 200px;
+	margin: auto;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	background-color: dodgerblue;
 }

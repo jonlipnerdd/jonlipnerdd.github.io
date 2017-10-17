@@ -15,7 +15,7 @@
 	box-sizing: border-box;
 }
 
-h1, h2 {
+h1, h2, h3 {
 	font-family: 'Montserrat', sans-serif;
 	color: #fafafa;
 	text-align: center;
@@ -56,9 +56,15 @@ header {
 	margin: auto;
 	position: fixed;
 	background-color: #161718;
+	opacity: 0.6;
 	-moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   	-webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  	transition: opacity 0.5s ease;
+}
+
+.menu:hover {
+	opacity: 1;
 }
 
 /*-------- CONTAINER ------------*/
@@ -73,7 +79,7 @@ header {
 
 .container a {
 	height: auto;
-	width: 200px;
+	max-width: 200px;
 	font-family: 'Montserrat', sans-serif;
 	color: #fafafa;
 	font-size: 1em;
@@ -215,6 +221,37 @@ header {
                0 10px 10px rgba(0,0,0,.2),
                0 20px 20px rgba(0,0,0,.15);
 }
+
+.wherecon {
+	height: auto;
+	width: 100%;
+	padding-bottom: 40px;
+	position: relative;
+	background-image: url(../img/background-where.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	-moz-box-shadow: 
+	0 -6px 9px 0 rgba(0, 0, 0, 0.2), 0 -9px 30px 0 rgba(0, 0, 0, 0.19), 
+	0 6px 9px 0 rgba(0, 0, 0, 0.2), 0 9px 30px 0 rgba(0, 0, 0, 0.19);
+  	-webkit-box-shadow: 
+  	0 -6px 9px 0 rgba(0, 0, 0, 0.2), 0 -9px 30px 0 rgba(0, 0, 0, 0.19),
+  	0 6px 9px 0 rgba(0, 0, 0, 0.2), 0 9px 30px 0 rgba(0, 0, 0, 0.19);
+  	box-shadow: 
+  	0 -6px 9px 0 rgba(0, 0, 0, 0.2), 0 -9px 30px 0 rgba(0, 0, 0, 0.19),
+  	0 6px 9px 0 rgba(0, 0, 0, 0.2), 0 9px 30px 0 rgba(0, 0, 0, 0.19);
+}
+
+.wherebutton {
+	height: auto;
+	max-width: 280px;
+	margin: auto;
+}
+
+.wherebutton a {
+	height: auto;
+	max-width: 280px;
+}
+
 
 /*---------- FOOTER ------------*/
 

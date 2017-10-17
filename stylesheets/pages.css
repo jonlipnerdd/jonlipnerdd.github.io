@@ -87,38 +87,6 @@
 }
 
 
-/*---------- WHERE --------------*/
-
-.wherecon {
-	height: auto;
-	width: 100%;
-	padding-bottom: 40px;
-	position: relative;
-	background-image: url(../img/background-where.jpg);
-	background-position: center;
-	background-repeat: no-repeat;
-	-moz-box-shadow: 
-	0 -6px 9px 0 rgba(0, 0, 0, 0.2), 0 -9px 30px 0 rgba(0, 0, 0, 0.19), 
-	0 6px 9px 0 rgba(0, 0, 0, 0.2), 0 9px 30px 0 rgba(0, 0, 0, 0.19);
-  	-webkit-box-shadow: 
-  	0 -6px 9px 0 rgba(0, 0, 0, 0.2), 0 -9px 30px 0 rgba(0, 0, 0, 0.19),
-  	0 6px 9px 0 rgba(0, 0, 0, 0.2), 0 9px 30px 0 rgba(0, 0, 0, 0.19);
-  	box-shadow: 
-  	0 -6px 9px 0 rgba(0, 0, 0, 0.2), 0 -9px 30px 0 rgba(0, 0, 0, 0.19),
-  	0 6px 9px 0 rgba(0, 0, 0, 0.2), 0 9px 30px 0 rgba(0, 0, 0, 0.19);
-}
-
-.wherebutton {
-	height: auto;
-	max-width: 280px;
-	margin: auto;
-}
-
-.wherebutton a {
-	height: auto;
-	width: auto;
-}
-
 /*------------------------------
 
             WHAT      
@@ -136,19 +104,29 @@
 	background-color: #2525a8;
 }
 
+.carrousample {
+	max-width: 475px;
+	margin: auto;
+}
+
+.carrousample a {
+	max-width: 100px;
+}
+
 
 /*------------ DESCRIPTION -------------*/
 
 .descriptcon {
 	height: auto;
 	max-width: 1120px;
+	overflow: auto;
 	background-color: #1f1f8c;
 }
 
 .descriptimg{
 	height: auto;
 	max-width: 70%;
-	margin: auto;
+	float: left;
 }
 
 .sampleviews {
@@ -158,7 +136,14 @@
 .descriptbox{
 	height: auto;
 	max-width: 30%;
-	margin: auto;
+	float: right;
+}
+
+
+/*------------ WHERE -------------*/
+
+.wherecon {
+	clear: both;
 }
 
 
@@ -169,6 +154,7 @@
 -------------------------------*/
 
 /*------------ SKILLS/TOOLS -------------*/
+
 
 .magicboxcon {
 	height: auto;
@@ -181,6 +167,17 @@
 	width: 50%;
 }
 
+.magicbox:hover h3 {
+	text-shadow: 0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+}
+
+
 .outer {
 	height: 200px;
 	width: 200px;
@@ -188,4 +185,11 @@
 	margin-top: 50px;
 	margin-bottom: 50px;
 	background-color: dodgerblue;
+}
+
+.how .howbox {
+	padding-bottom: 20px;
+	z-index: 25;
+	clear: both;
+	background-color: #2525a8;
 }

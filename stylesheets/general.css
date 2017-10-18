@@ -72,9 +72,7 @@ header {
 .container {
 	height: auto;
 	max-width: 100%;
-	background-image: url(../img/background2.jpg);
-	background-repeat: repeat-y;
-	background-position: center;
+	background-color: #000229;
 }
 
 .container a {
@@ -160,6 +158,7 @@ header {
 
 .levelthree {
 	margin: auto;
+	position: relative;
 	background-color: #2525a8;
 	box-shadow: 0 6px 1px rgba(0,0,0,.1),
                0 0 5px rgba(0,0,0,.1),

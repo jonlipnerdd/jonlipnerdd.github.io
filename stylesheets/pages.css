@@ -9,17 +9,21 @@
 /*--------- INTRO ------------*/
 
 .introcon {
-	height: auto;
+	height: 1080px;
 	width: 100%;
-	background-image: url(../img/index/cover2.jpg);
-	background-repeat: no-repeat;
-	background-size: contain;
-	background-position: center;
+	position: relative;
+	overflow: hidden;
+}
+
+.introcon img {
+	max-width: 1920px;
+	position: absolute;
 }
 
 .poemcon {
 	height: auto;
 	max-width: 500px;
+	position: relative;
 	margin: auto;
 	text-align: center;
 	z-index: 1
@@ -37,6 +41,7 @@
 .whobox {
 	height: auto;
 	max-width: 800px;
+	position: relative;
 }
 
 
@@ -58,6 +63,7 @@
 	height: 200px;
 	width: 0;
 	margin: auto;
+	overflow: hidden;
 	-webkit-transition: all 0.5s;
 	transition: all 0.5s;
 }
@@ -77,6 +83,25 @@
 .howbox:hover .desdev-box {
 	width: 100%;
 	
+}
+
+.indexdev {
+	max-width: 80%;
+	padding-top: 400px;
+	margin: auto;
+	transition: padding-top 0.8s ease;
+	transition-delay: 0.8s;
+}
+
+.indexdevchild {
+	height: 300px;
+	width: 200px;
+	margin: auto;
+	background-color: orange;
+}
+
+.howbox:hover .indexdev {
+	padding-top: 0;
 }
 
 /*------------ WHAT -------------*/
@@ -111,6 +136,7 @@
 
 .carrousample a {
 	max-width: 100px;
+	border: none;
 }
 
 
@@ -131,6 +157,10 @@
 
 .sampleviews {
 	width: 300px;
+}
+
+.sampleviews a {
+	border: none;
 }
 
 .descriptbox{
@@ -192,4 +222,41 @@
 	z-index: 25;
 	clear: both;
 	background-color: #2525a8;
+}
+
+
+/*------------------------------
+
+            WHO      
+
+-------------------------------*/
+
+/*------------- BIO -------------*/
+
+.biobox {
+	height: 400px;
+	max-width: 800px;
+}
+
+/*------------ FUN-FACTS -------------*/
+
+.funcon {
+	height: 100px;
+	max-width: 1040px;
+	z-index: 25;
+	background-color: #2525a8;
+}
+
+/*------------ HISTORY -------------*/
+
+.historybox {
+	height: 800px;
+	max-width: 960px;
+}
+
+/*------------ VALUES -------------*/
+
+.valuebox {
+	height: 200px;
+	max-width: 1120px;
 }

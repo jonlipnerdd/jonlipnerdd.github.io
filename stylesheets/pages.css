@@ -81,8 +81,7 @@
 }
 
 .howbox:hover .desdev-box {
-	width: 100%;
-	
+	width: 100%;	
 }
 
 .indexdev {
@@ -238,25 +237,205 @@
 	max-width: 800px;
 }
 
+.photo {
+	width: 60%;
+}
+
+.bio {
+	width: 40%;
+}
+
 /*------------ FUN-FACTS -------------*/
 
 .funcon {
-	height: 100px;
+	height: auto;
 	max-width: 1040px;
+	padding-bottom: 0;
 	z-index: 25;
 	background-color: #2525a8;
 }
 
+.funcon p {
+	text-shadow: none;
+	line-height: 30px;
+}
+
+.funbox {
+	width: 1000px;
+	margin: auto;
+}
+
+.funfacts {
+	margin: auto;
+	padding: 8px;
+}
+
+.funfacts li {
+	height: 50px;
+	transition: box-shadow 0.5s ease;
+}
+
+.funfacts li:hover {
+	box-shadow: 
+  			0 6px 1px rgba(0,0,0,.1),
+            0 0 5px rgba(0,0,0,.1),
+            0 1px 3px rgba(0,0,0,.3),
+            0 3px 5px rgba(0,0,0,.2),
+            0 5px 10px rgba(0,0,0,.25),
+            0 10px 10px rgba(0,0,0,.2),
+            0 20px 20px rgba(0,0,0,.15);
+}
+
+.facts p {
+	padding-top: 10px;
+}
+
+
 /*------------ HISTORY -------------*/
 
 .historybox {
-	height: 800px;
+	height: auto;
 	max-width: 960px;
 }
 
-/*------------ VALUES -------------*/
+.hitbox {
+	height: auto;
+	max-width: 800px;
+	margin: auto;
+	padding-bottom: 20px;
+	overflow: auto;
+}
 
-.valuebox {
+.date {
+	height: 100px;
+	width: 20%;
+	float: left;
+	background-color: #2525a8;
+}
+
+.date p {
+	line-height: 100px;
+	font-size: 200%;
+}
+
+.hit {
+	height: 100px;
+	width: 78%;
+	padding: 20px;
+	float: right;
+	overflow: hidden;
+	background-color: dodgerblue;
+	transition: height 1s ease;
+}
+
+.hit p {
+	color: #fafafa;
+	font-size: 200%;
+	text-shadow: none;
+	transition: font-size 0.6s ease;
+}
+
+.hit:hover {
+	height: 300px;
+}
+
+.hit:hover p {
+	font-size: 100%;
+}
+
+
+/*------------------------------
+
+            WHERE     
+
+-------------------------------*/
+
+/*------------- FORM -------------*/
+
+.formbox {
+	width: 80%;
+	margin: auto;
+}
+
+.formbox p {
+	text-shadow: none;
+	padding-bottom: 15px;
+	text-align: left;
+}
+
+form div {
+	padding: 20px;
+}
+
+.whowrites {
+	width: 50%;
+}
+
+input[type="text"], input[type="email"], textarea {
+	width: 100%;
+	border: none;
+	padding: 10px;
+	font-family: 'Cabin', sans-serif;
+	font-style: italic;
+	font-size: 1.2em;
+	color: lightgrey;
+	background-color: #000229;
+}
+
+textarea {
+	height: 250px;
+}
+
+.writeremail {
+	width: 50%;
+}
+
+.themessage {
+	width: 100%;
+}
+
+.submit {
+	width: 200px;
+	margin: auto;
+}
+
+input[type="submit"] {
+	height: auto;
+	width: 100%;
+	font-family: 'Montserrat', sans-serif;
+	color: #fafafa;
+	font-size: 1em;
+	padding: 10px;
+	border: 3px solid #fafafa;
+	display: block;
+	margin: auto;
+	background-color: transparent;
+	-webkit-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+input[type="submit"]:hover {
+	background-color: dodgerblue;
+	border: 3px solid dodgerblue;
+}
+}
+
+/*------------- SOCIAL -------------*/
+
+.socialcon {
 	height: 200px;
-	max-width: 1120px;
+}
+
+/*------------- RECEIVED -------------*/
+
+.received {
+	height: 80px;
+	width: 600px;
+	margin: auto;
+	margin-top: 50px;
+}
+
+.received p {
+	line-height: 80px;
+	text-shadow: none;
 }

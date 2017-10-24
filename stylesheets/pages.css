@@ -9,15 +9,24 @@
 /*--------- INTRO ------------*/
 
 .introcon {
-	height: 1080px;
+	height: auto;
 	width: 100%;
 	position: relative;
-	overflow: hidden;
+	background-color: #000229;
 }
 
-.introcon img {
+.index .intro {
+	min-height: 994px;
 	max-width: 1920px;
-	position: absolute;
+	background-image: url(../img/index/cover.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.introtag {
+	height: 100px;
+	max-width: 1920px;
 }
 
 .poemcon {
@@ -26,14 +35,36 @@
 	position: relative;
 	margin: auto;
 	text-align: center;
-	z-index: 1
+	padding-top: 250px;
 }
 
 .poemcon p {
 	font-family: 'Cabin', sans-serif;
 	font-style: italic;
-	font-size: 1vw;
+	font-size: 1.1em;
 	color: #fafafa;
+	text-shadow: 0 6px 1px rgba(0,0,0,.1),
+            0 0 5px rgba(0,0,0,.1),
+            0 1px 3px rgba(0,0,0,.3),
+            0 3px 5px rgba(0,0,0,.2),
+            0 5px 10px rgba(0,0,0,.25),
+            0 10px 10px rgba(0,0,0,.2),
+            0 20px 20px rgba(0,0,0,.15);
+}
+
+.introtag {
+	padding-top: 100px;
+}
+
+.introtag h1 {
+	font-size: 2.7em;
+	text-shadow: 0 6px 1px rgba(0,0,0,.1),
+            0 0 5px rgba(0,0,0,.1),
+            0 1px 3px rgba(0,0,0,.3),
+            0 3px 5px rgba(0,0,0,.2),
+            0 5px 10px rgba(0,0,0,.25),
+            0 10px 10px rgba(0,0,0,.2),
+            0 20px 20px rgba(0,0,0,.15);
 }
 
 /*---------- WHO --------------*/
@@ -42,6 +73,7 @@
 	height: auto;
 	max-width: 800px;
 	position: relative;
+	margin-top: 30px;
 }
 
 
@@ -110,6 +142,40 @@
 	max-width: 800px;
 }
 
+.whatbox p {
+	padding-bottom: 20px;
+}
+
+.whatbox .bodytext p {
+	padding-top: 20px;
+}
+
+.projects {
+	height: auto;
+	max-width: 758px;
+	margin: auto;
+}
+
+.projects img {
+	height: auto;
+	width: 250px;
+	padding: 5px;
+	filter: grayscale(0.6);
+	transition: all 0.5s ease;
+}
+
+.projects img:hover {
+	filter: grayscale(0);
+	background-color: #fafafa;
+	box-shadow: 
+			0 6px 1px rgba(0,0,0,.1),
+            0 0 5px rgba(0,0,0,.1),
+            0 1px 3px rgba(0,0,0,.3),
+            0 3px 5px rgba(0,0,0,.2),
+            0 5px 10px rgba(0,0,0,.25),
+            0 10px 10px rgba(0,0,0,.2),
+            0 20px 20px rgba(0,0,0,.15);
+} 
 
 /*------------------------------
 
@@ -117,25 +183,61 @@
 
 -------------------------------*/
 
+.what .intro {
+	min-height: 994px;
+	max-width: 1920px;
+	background-image: url(../img/what/cover.jpeg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	z-index: 30;
+	box-shadow: 
+			0 6px 1px rgba(0,0,0,.1),
+            0 0 5px rgba(0,0,0,.1),
+            0 1px 3px rgba(0,0,0,.3),
+            0 3px 5px rgba(0,0,0,.2),
+            0 5px 10px rgba(0,0,0,.25),
+            0 10px 10px rgba(0,0,0,.2),
+            0 20px 20px rgba(0,0,0,.15);
+}
 
+.what .introtag {
+	padding-top: 250px;
+}
 /*------------ PROJECTS -------------*/
 
 .what .howbox {
-	height: 100px;
-	max-width: 480px;
+	height: auto;
+	max-width: 600px;
 	z-index: 25;
 	position: relative;
 	background-color: #2525a8;
 }
 
 .carrousample {
-	max-width: 475px;
+	width: 600px;
+	margin: auto;
+	padding-left: 25px;
+}
+
+.sitebox {
+	width: 80px;
 	margin: auto;
 }
 
-.carrousample a {
-	max-width: 100px;
+.carrousample li {
+	filter: grayscale(0.6);
+	transition: all 0.5s ease;
+}
+
+.carrousample img {
+	height: 80px;
 	border: none;
+	text-align: center;
+}
+
+.carrousample li:hover {
+	filter: grayscale(0);
 }
 
 
@@ -150,22 +252,69 @@
 
 .descriptimg{
 	height: auto;
-	max-width: 70%;
+	width: 60%;
 	float: left;
+}
+
+.sample {
+	height: 470px;
+	width: 350px;
+	margin: auto;
+	margin-top: 35px;
+	margin-bottom: 30px;
+	background-color: dodgerblue;
+	transition: box-shadow 0.5s ease;
+}
+
+.sample img {
+	position: absolute;
+}
+
+.sample:hover {
+	box-shadow: 
+  			0 6px 1px rgba(0,0,0,.1),
+            0 0 5px rgba(0,0,0,.1),
+            0 1px 3px rgba(0,0,0,.3),
+            0 3px 5px rgba(0,0,0,.2),
+            0 5px 10px rgba(0,0,0,.25),
+            0 10px 10px rgba(0,0,0,.2),
+            0 20px 20px rgba(0,0,0,.15);
 }
 
 .sampleviews {
 	width: 300px;
+	margin: auto;
 }
 
-.sampleviews a {
-	border: none;
+.sampleviews li {
+	text-shadow: none;
+	text-align: center;
+	color: #fafafa;
+	font-family: 'Montserrat', sans-serif;
+	transition: text-shadow 0.5s ease;
+}
+
+.sampleviews li:hover {
+	text-shadow: 
+  			0 6px 1px rgba(0,0,0,.1),
+            0 0 5px rgba(0,0,0,.1),
+            0 1px 3px rgba(0,0,0,.3),
+            0 3px 5px rgba(0,0,0,.2),
+            0 5px 10px rgba(0,0,0,.25),
+            0 10px 10px rgba(0,0,0,.2),
+            0 20px 20px rgba(0,0,0,.15);
 }
 
 .descriptbox{
 	height: auto;
-	max-width: 30%;
+	max-width: 40%;
 	float: right;
+}
+
+.descript p {
+	text-shadow: none;
+	text-align: justify;
+	padding: 30px;
 }
 
 
@@ -182,6 +331,28 @@
 
 -------------------------------*/
 
+.how .intro {
+	min-height: 994px;
+	max-width: 1920px;
+	background-image: url(../img/how/cover.jpeg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	z-index: 30;
+	box-shadow:
+			0 6px 1px rgba(0,0,0,.1),
+            0 0 5px rgba(0,0,0,.1),
+            0 1px 3px rgba(0,0,0,.3),
+            0 3px 5px rgba(0,0,0,.2),
+            0 5px 10px rgba(0,0,0,.25),
+            0 10px 10px rgba(0,0,0,.2),
+            0 20px 20px rgba(0,0,0,.15);
+}
+
+.how .introtag {
+	padding-top: 250px;
+}
+
 /*------------ SKILLS/TOOLS -------------*/
 
 
@@ -189,11 +360,32 @@
 	height: auto;
 	width: 960px;
 	position: relative;
+	background-color: transparent;
 }
+
+.magicsquareup {
+	height: 300px;
+	width: 49.5%;
+	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	box-shadow: none;
+	background-color: dodgerblue;
+}
+
+.magicsquaredown {
+	height: 300px;
+	width: 49.5%;
+	margin: auto;
+	margin-bottom: 10px;
+	box-shadow: none;
+	background-color: dodgerblue;
+}
+
 
 .magicbox {
 	height: auto;
-	width: 50%;
+	width: 49.5%;
 }
 
 .magicbox:hover h3 {
@@ -209,10 +401,10 @@
 
 .outer {
 	height: 200px;
-	width: 200px;
+	width: 60%;
 	margin: auto;
-	margin-top: 50px;
-	margin-bottom: 50px;
+	margin-top: 20px;
+	margin-bottom: 30px;
 	background-color: dodgerblue;
 }
 
@@ -230,19 +422,119 @@
 
 -------------------------------*/
 
+.who .intro {
+	min-height: 994px;
+	max-width: 1920px;
+	background-image: url(../img/who/cover.jpeg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	box-shadow:
+			0 6px 1px rgba(0,0,0,.1),
+            0 0 5px rgba(0,0,0,.1),
+            0 1px 3px rgba(0,0,0,.3),
+            0 3px 5px rgba(0,0,0,.2),
+            0 5px 10px rgba(0,0,0,.25),
+            0 10px 10px rgba(0,0,0,.2),
+            0 20px 20px rgba(0,0,0,.15);
+}
+
+.who .introtag {
+	padding-top: 250px;
+}
+
 /*------------- BIO -------------*/
 
 .biobox {
-	height: 400px;
+	height: auto;
 	max-width: 800px;
+	overflow: auto;
+	padding-bottom: 0;
+	margin-top: 30px;
 }
 
-.photo {
+.photobox {
+	height: auto;
 	width: 60%;
 }
 
+.photo {
+	max-height: 350px;
+	max-width: 350px;
+	margin: auto;
+	margin-top: 25px;
+	margin-bottom: 27px;
+	overflow: hidden;
+	border-radius: 50%;
+	filter: grayscale(1);
+	background-color: dodgerblue;
+	transition: all 1s ease;
+}
+
+.photo img {
+	height: auto;
+	max-width: 350px;
+}
+
+.biobox:hover .photo {
+	filter: grayscale(0);
+	-moz-box-shadow: 
+	0 6px 1px rgba(0,0,0,.1),
+            0 0 5px rgba(0,0,0,.1),
+            0 1px 3px rgba(0,0,0,.3),
+            0 3px 5px rgba(0,0,0,.2),
+            0 5px 10px rgba(0,0,0,.25),
+            0 10px 10px rgba(0,0,0,.2),
+            0 20px 20px rgba(0,0,0,.15),
+            0 -6px 1px rgba(0,0,0,.1),
+            0 0 5px rgba(0,0,0,.1),
+            0 -1px 3px rgba(0,0,0,.3),
+            0 -3px 5px rgba(0,0,0,.2),
+            0 -5px 10px rgba(0,0,0,.25),
+            0 -10px 10px rgba(0,0,0,.2),
+            0 -20px 20px rgba(0,0,0,.15);;
+  	-webkit-box-shadow: 
+  	0 6px 1px rgba(0,0,0,.1),
+            0 0 5px rgba(0,0,0,.1),
+            0 1px 3px rgba(0,0,0,.3),
+            0 3px 5px rgba(0,0,0,.2),
+            0 5px 10px rgba(0,0,0,.25),
+            0 10px 10px rgba(0,0,0,.2),
+            0 20px 20px rgba(0,0,0,.15),
+            0 -6px 1px rgba(0,0,0,.1),
+            0 0 5px rgba(0,0,0,.1),
+            0 -1px 3px rgba(0,0,0,.3),
+            0 -3px 5px rgba(0,0,0,.2),
+            0 -5px 10px rgba(0,0,0,.25),
+            0 -10px 10px rgba(0,0,0,.2),
+            0 -20px 20px rgba(0,0,0,.15);;
+  	box-shadow: 
+  			0 6px 1px rgba(0,0,0,.1),
+            0 0 5px rgba(0,0,0,.1),
+            0 1px 3px rgba(0,0,0,.3),
+            0 3px 5px rgba(0,0,0,.2),
+            0 5px 10px rgba(0,0,0,.25),
+            0 10px 10px rgba(0,0,0,.2),
+            0 20px 20px rgba(0,0,0,.15),
+            0 -6px 1px rgba(0,0,0,.1),
+            0 0 5px rgba(0,0,0,.1),
+            0 -1px 3px rgba(0,0,0,.3),
+            0 -3px 5px rgba(0,0,0,.2),
+            0 -5px 10px rgba(0,0,0,.25),
+            0 -10px 10px rgba(0,0,0,.2),
+            0 -20px 20px rgba(0,0,0,.15);
+}
+
 .bio {
+	height: auto;
 	width: 40%;
+}
+
+.bio p  {
+	padding: 30px;
+	margin-top: 21%;
+	text-shadow: none;
+	text-align: justify;	
 }
 
 /*------------ FUN-FACTS -------------*/
@@ -260,6 +552,10 @@
 	line-height: 30px;
 }
 
+.funcon h2 {
+	padding-top: 30px;
+}
+
 .funbox {
 	width: 1000px;
 	margin: auto;
@@ -275,7 +571,12 @@
 	transition: box-shadow 0.5s ease;
 }
 
+.funfacts p {
+	transition: all 0.5s ease;
+}
+
 .funfacts li:hover {
+	background-color: #fafafa;
 	box-shadow: 
   			0 6px 1px rgba(0,0,0,.1),
             0 0 5px rgba(0,0,0,.1),
@@ -284,6 +585,12 @@
             0 5px 10px rgba(0,0,0,.25),
             0 10px 10px rgba(0,0,0,.2),
             0 20px 20px rgba(0,0,0,.15);
+}
+
+.funfacts li:hover p {
+	color: #2525a8;
+	font-size: 1.1em;
+	text-transform: uppercase;
 }
 
 .facts p {
@@ -332,6 +639,7 @@
 	color: #fafafa;
 	font-size: 200%;
 	text-shadow: none;
+	text-align: justify;
 	transition: font-size 0.6s ease;
 }
 
@@ -350,7 +658,33 @@
 
 -------------------------------*/
 
+.where .intro {
+	min-height: 994px;
+	max-width: 1920px;
+	background-image: url(../img/where/cover.jpeg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	z-index: 30;
+	box-shadow:
+			0 6px 1px rgba(0,0,0,.1),
+            0 0 5px rgba(0,0,0,.1),
+            0 1px 3px rgba(0,0,0,.3),
+            0 3px 5px rgba(0,0,0,.2),
+            0 5px 10px rgba(0,0,0,.25),
+            0 10px 10px rgba(0,0,0,.2),
+            0 20px 20px rgba(0,0,0,.15);
+}
+
+.where .introtag {
+	padding-top: 250px;
+}
+
 /*------------- FORM -------------*/
+
+.formcon {
+	margin-top: 30px;
+}
 
 .formbox {
 	width: 80%;

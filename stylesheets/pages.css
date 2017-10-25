@@ -16,7 +16,7 @@
 }
 
 .index .intro {
-	min-height: 994px;
+	min-height: 894px;
 	max-width: 1920px;
 	background-image: url(../img/index/cover.jpg);
 	background-position: center;
@@ -27,6 +27,18 @@
 .introtag {
 	height: 100px;
 	max-width: 1920px;
+	padding-top: 100px;
+}
+
+.introtag h1 {
+	font-size: 2.7em;
+	text-shadow: 0 6px 1px rgba(0,0,0,.1),
+            0 0 5px rgba(0,0,0,.1),
+            0 1px 3px rgba(0,0,0,.3),
+            0 3px 5px rgba(0,0,0,.2),
+            0 5px 10px rgba(0,0,0,.25),
+            0 10px 10px rgba(0,0,0,.2),
+            0 20px 20px rgba(0,0,0,.15);
 }
 
 .poemcon {
@@ -52,20 +64,7 @@
             0 20px 20px rgba(0,0,0,.15);
 }
 
-.introtag {
-	padding-top: 100px;
-}
 
-.introtag h1 {
-	font-size: 2.7em;
-	text-shadow: 0 6px 1px rgba(0,0,0,.1),
-            0 0 5px rgba(0,0,0,.1),
-            0 1px 3px rgba(0,0,0,.3),
-            0 3px 5px rgba(0,0,0,.2),
-            0 5px 10px rgba(0,0,0,.25),
-            0 10px 10px rgba(0,0,0,.2),
-            0 20px 20px rgba(0,0,0,.15);
-}
 
 /*---------- WHO --------------*/
 
@@ -124,11 +123,50 @@
 	transition-delay: 0.8s;
 }
 
-.indexdevchild {
+.card {
 	height: 300px;
 	width: 200px;
 	margin: auto;
-	background-color: orange;
+	transform-style: preserve-3d;
+	transform: perspective(800px);
+}
+
+.front {
+	background-color: green;
+}
+
+.back {
+	background-color: red;
+}
+
+.front, .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.front, .back {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transition: -webkit-transform 0.3s;
+          transition: transform 0.3s;
+}
+
+.back {
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
+
+.card:hover .front {
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
+
+.card:hover .back {
+  -webkit-transform: rotateY(0);
+          transform: rotateY(0);
 }
 
 .howbox:hover .indexdev {
@@ -184,7 +222,7 @@
 -------------------------------*/
 
 .what .intro {
-	min-height: 994px;
+	min-height: 600px;
 	max-width: 1920px;
 	background-image: url(../img/what/cover.jpeg);
 	background-position: center;
@@ -202,7 +240,7 @@
 }
 
 .what .introtag {
-	padding-top: 250px;
+	padding-top: 200px;
 }
 /*------------ PROJECTS -------------*/
 
@@ -290,7 +328,7 @@
 	text-shadow: none;
 	text-align: center;
 	color: #fafafa;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Cabin', sans-serif;
 	transition: text-shadow 0.5s ease;
 }
 
@@ -332,9 +370,9 @@
 -------------------------------*/
 
 .how .intro {
-	min-height: 994px;
+	min-height: 600px;
 	max-width: 1920px;
-	background-image: url(../img/how/cover.jpeg);
+	background-image: url(../img/how/cover.jpg);
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -350,7 +388,7 @@
 }
 
 .how .introtag {
-	padding-top: 250px;
+	padding-top: 200px;
 }
 
 /*------------ SKILLS/TOOLS -------------*/
@@ -423,7 +461,7 @@
 -------------------------------*/
 
 .who .intro {
-	min-height: 994px;
+	min-height: 600px;
 	max-width: 1920px;
 	background-image: url(../img/who/cover.jpeg);
 	background-position: center;
@@ -440,7 +478,7 @@
 }
 
 .who .introtag {
-	padding-top: 250px;
+	padding-top: 200px;
 }
 
 /*------------- BIO -------------*/
@@ -659,9 +697,9 @@
 -------------------------------*/
 
 .where .intro {
-	min-height: 994px;
+	min-height: 600px;
 	max-width: 1920px;
-	background-image: url(../img/where/cover.jpeg);
+	background-image: url(../img/where/cover.jpg);
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -677,7 +715,7 @@
 }
 
 .where .introtag {
-	padding-top: 250px;
+	padding-top: 200px;
 }
 
 /*------------- FORM -------------*/

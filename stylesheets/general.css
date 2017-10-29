@@ -55,6 +55,23 @@ header {
 	right: 0;
 	margin: auto;
 	position: fixed;
+	background-color: transparent;
+}
+
+.menu a {
+	transition: background-color 0.5s ease;
+}
+
+.menu a:hover {
+	background-color: dodgerblue;
+}
+
+#menu {
+	transition: all 0.5s ease;
+}
+
+.fixed {
+	position: fixed;
 	background-color: #161718;
 	opacity: 0.6;
 	-moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -63,7 +80,7 @@ header {
   	transition: opacity 0.5s ease;
 }
 
-.menu:hover {
+.fixed:hover {
 	opacity: 1;
 }
 

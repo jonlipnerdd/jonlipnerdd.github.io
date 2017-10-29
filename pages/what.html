@@ -11,7 +11,7 @@
 <body class="what">
 	<header>
 		<div class="head">
-			<nav class="menu">
+			<nav class="menu" id="menu">
 				<ul>
 					<li><a href="what.html">Qué</a></li>
 					<li><a href="how.html">Cómo</a></li>
@@ -45,27 +45,27 @@
 			<nav class="carrousample">
 				<ul>
 					<li>
-						<div class="sitebox">
+						<div class="sitebox button selected" data-project='key'>
 							<img src="../img/samples/logos/sampleone.png" alt="Logo uno">
 						</div>
 					</li>
 					<li>
-						<div class="carrousampleimg">
+						<div class="sitebox button" data-project='bee'>
 							<img src="../img/samples/logos/sampletwo.png" alt="Logo dos">
 						</div>
 					</li>
 					<li>
-						<div class="carrousampleimg">
+						<div class="sitebox button" data-project='crow'>
 							<img src="../img/samples/logos/samplethree.png" alt="Logo tres">
 						</div>
 					</li>
 					<li>
-						<div class="carrousampleimg">
+						<div class="sitebox button" data-project='fox'>
 							<img src="../img/samples/logos/samplefour.png" alt="Logo cuatro">
 						</div>
 					</li>
 					<li>
-						<div class="carrousampleimg">
+						<div class="sitebox button" data-project='polygon'>
 							<img src="../img/samples/logos/samplefive.png" alt="Logo cinco">
 						</div>
 					</li>
@@ -76,13 +76,17 @@
 			<h2>GIBSON.COM</h2>
 			<div class="descriptimg">
 				<div class="sample">
-					<img src="../img/samples/sites/sitethree.png" alt="Imagen sitio">
+					<img class='img selected' data-project='key' src="../img/samples/sites/sitethree.png" alt="Imagen sitio">
+					<img class='img' data-project='bee' src="../img/samples/sites/sitesix.png">
+					<img class='img' data-project='crow' src="../img/samples/sites/sitetwo.png">
+					<img class='img' data-project='fox' src="../img/samples/sites/sitefour.png">
+					<img class='img' data-project='polygon' src="../img/samples/sites/sitefive.png">
 				</div>
 				<nav class="sampleviews">
 					<ul>
-						<li>Vista 1</li>
-						<li>Vista 2</li>
-						<li>Vista 3</li>
+						<li class="button selected" data-project='fox'>Vista 1</li>
+						<li class="button" data-project='bee'>Vista 2</li>
+						<li class="button" data-project='crow'>Vista 3</li>
 					</ul>
 				</nav>	
 			</div>
@@ -118,5 +122,8 @@
 			<p>&copy; 2017 | Diseño y desarrollo: Jonatan Lipner</p>
 		</div>
 	</footer>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="../js/javascript.js"></script>
+	<script src='../js/select.js'></script>
 </body>
 </html>

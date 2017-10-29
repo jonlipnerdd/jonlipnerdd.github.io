@@ -124,7 +124,7 @@
 }
 
 .card {
-	height: 300px;
+	height: 200px;
 	width: 200px;
 	margin: auto;
 	transform-style: preserve-3d;
@@ -135,9 +135,20 @@
 	background-color: green;
 }
 
+.front img {
+	height: 200px;
+	width: 200px;
+}
+
 .back {
 	background-color: red;
 }
+
+.back img {
+	height: 200px;
+	width: 200px;
+}
+
 
 .front, .back {
   position: absolute;
@@ -263,7 +274,7 @@
 	margin: auto;
 }
 
-.carrousample li {
+.carrousample img {
 	filter: grayscale(0.6);
 	transition: all 0.5s ease;
 }
@@ -274,10 +285,13 @@
 	text-align: center;
 }
 
-.carrousample li:hover {
+.carrousample li:hover img {
 	filter: grayscale(0);
 }
 
+.selected img {
+	filter: grayscale(0);
+}
 
 /*------------ DESCRIPTION -------------*/
 
@@ -306,6 +320,12 @@
 
 .sample img {
 	position: absolute;
+	display: none;
+}
+
+.sample img.selected {
+	position: relative;
+	display: block;
 }
 
 .sample:hover {

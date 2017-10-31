@@ -1,0 +1,131 @@
+/*--------- GRAL ---------*/
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+h1, h2, p {
+	text-align: center;
+	font-family: 'Hind', sans-serif;
+	color: #fafafa;
+}
+
+h1, h2 {
+	font-weight: 600;
+}
+
+header, footer {
+	height: auto;
+	width: 100%;
+	background-color: crimson;
+}
+
+.head, .foot {
+	height: 50px;
+	max-width: 1200px;
+	margin: auto;
+	background-color: lightcoral;
+}
+
+.logo {
+	max-width: 200px;
+	float: left;
+}
+
+.menu {
+	width: 500px;
+	float: right;
+}
+
+.menu ul {
+	list-style-type: none;
+	display: inline;
+}
+
+.menu ul li {
+	float: right;
+	padding-left: 40px;
+	padding-right: 8px;
+}
+
+.menu a {
+	text-decoration: none;
+	text-align: center;
+}
+
+.sectcon {
+	height: auto;
+	width: 100%;
+}
+
+/*-------- SECTIONS ------*/
+
+
+.introcon {
+	clear: both;
+	background-color: orangered;
+}
+
+.intro {
+	height: 500px;
+	max-width: 1200px;
+	margin: auto;
+	background-color: orange;
+}
+
+.modelcon {
+	background-color: darkgoldenrod;
+}
+
+.models {
+	height: 500px;
+	max-width: 1200px;
+	margin: auto;
+	background-color: goldenrod;	
+}
+
+.perkcon {
+	background-color: lime
+}
+
+.perks {
+	height: 500px;
+	max-width: 1200px;
+	margin: auto;
+	background-color: lawngreen;
+}
+
+.productcon {
+	background-color: royalblue;
+}
+
+.products {
+	height: 500px;
+	max-width: 1200px;
+	margin: auto;
+	background-color: lightblue;
+}
+
+.costumercon {
+	background-color: indigo
+}
+
+.costumers {
+	height: 500px;
+	max-width: 1200px;
+	margin: auto;
+	background-color: purple;
+}
+
+.buycon {
+	background-color: darkkhaki;
+}
+
+.buy {
+	height: 500px;
+	max-width: 1200px;
+	margin: auto;
+	background-color: khaki;
+}

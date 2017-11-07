@@ -641,7 +641,7 @@
     overflow: hidden;
     position: relative;
     text-align: center;
-    background-color: transparent;
+    background-color: #181666;
     cursor: default;
     box-shadow:
 			inset 0 6px 1px rgba(0,0,0,.1),

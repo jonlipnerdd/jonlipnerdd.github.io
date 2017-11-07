@@ -705,8 +705,7 @@
 }
 
 .toolone .mask {
-    transform: translateY(-100px);
-    opacity: 0;
+    transform: translateY(-200px);
     text-shadow: none;
     transition: all 0.3s ease;
 }
@@ -726,8 +725,7 @@
 }
 
 .tooltwo .mask {
-    transform: translateX(-100px);
-    opacity: 0;
+    transform: translateX(-300px);
     text-shadow: none;
     transition: all 0.3s ease;
 }
@@ -747,8 +745,7 @@
 }
 
 .tooltwob .mask {
-    transform: translateX(100px);
-    opacity: 0;
+    transform: translateX(300px);
     text-shadow: none;
     transition: all 0.3s ease;
 }
@@ -768,8 +765,7 @@
 }
 
 .toolthree .mask {
-    transform: translateY(100px);
-    opacity: 0;
+    transform: translateY(200px);
     text-shadow: none;
     transition: all 0.3s ease;
 }
@@ -792,7 +788,6 @@
 .tooltwo:hover .mask,
 .tooltwob:hover .mask,
 .toolthree:hover .mask { 
-	opacity: 1;
 	transform: translateY(0px);
     transform: translateX(0px);
 }

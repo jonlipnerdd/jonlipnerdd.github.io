@@ -444,6 +444,7 @@
 .skillbox {
 	height: auto;
 	width: 49.5%;
+	padding-bottom: 0px;
 	background-color: transparent;
 }
 

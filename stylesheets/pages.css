@@ -220,6 +220,12 @@
 	display: none;
 }
 
+.mobiwhatbox .descriptimg {
+	height: auto;
+	width: 60%;
+	margin: auto;
+}
+
 .projects {
 	height: auto;
 	max-width: 758px;

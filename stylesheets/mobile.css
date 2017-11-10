@@ -29,6 +29,12 @@ nav img {
 	width: auto;
 }
 
+.container a {
+	max-width: 300px;
+	background-color: dodgerblue;
+	border: 3px solid dodgerblue;
+}
+
 /*--------------------------------
   
             PAGES 
@@ -36,6 +42,16 @@ nav img {
 ---------------------------------*/
 
 /*--------- INDEX ------------*/
+
+.poemcon {
+	width: 90%;
+	padding-top: 200px;
+}
+
+.poemcon p {
+	font-size: 0.8em;
+}
+
 
 
 

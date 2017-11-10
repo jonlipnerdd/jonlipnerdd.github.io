@@ -222,8 +222,9 @@
 
 .mobiwhatbox .descriptimg {
 	height: auto;
-	width: 60%;
+	width: 100%;
 	margin: auto;
+	float: none;
 }
 
 .projects {

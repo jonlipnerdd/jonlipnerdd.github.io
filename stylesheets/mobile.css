@@ -1,4 +1,4 @@
-@media (max-width: 480px) {
+@media (max-width: 650px) {
 
 /*--------------------------------
   
@@ -16,7 +16,7 @@
 }
 
 nav a {
-	padding-top: 2px;
+	padding-top: 4px;
 	font-size: 1em;
 }
 
@@ -26,7 +26,7 @@ nav img {
 }
 
 .footnav {
-	padding-top: 7px;
+	padding-top: 10px;
 }
 
 .footnav img {
@@ -48,17 +48,42 @@ nav img {
 
 /*--------- INDEX ------------*/
 
+.introtag {
+	padding-top: 50px;
+}
+
 .introtag h1 {
 	font-size: 2.2em;
 }
 
 .poemcon {
 	width: 80%;
-	padding-top: 200px;
+	padding-top: 180px;
 }
 
 .poemcon p {
 	font-size: 1em;
+}
+
+.design-devbox, .desdev-box {
+	height: 800PX;
+}
+
+.desdev-box {
+	width: 100%;
+}
+
+.desdev-box nav ul {
+	display: block;
+}
+
+.desdev-box ul {
+	margin: auto;
+}
+
+.indexdev {
+	max-width: 200px;
+	padding-top: 900px;
 }
 
 .whatbox {

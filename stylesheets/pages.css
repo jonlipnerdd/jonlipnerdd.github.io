@@ -116,7 +116,6 @@
 }
 
 .indexdev {
-	max-width: 80%;
 	padding-top: 400px;
 	margin: auto;
 	transition: padding-top 0.8s ease;
@@ -235,7 +234,7 @@
 
 .projects img {
 	height: auto;
-	width: 250px;
+	width: 32.88%;
 	padding: 5px;
 	filter: grayscale(0.6);
 	transition: all 0.5s ease;

@@ -202,24 +202,28 @@
 
 /*------------ WHAT -------------*/
 
-.whatbox {
+.whatbox, .mobiwhatbox {
 	height: auto;
 	max-width: 800px;
 }
 
-.whatbox p {
+.whatbox p, .mobiwhatbox p {
 	padding-bottom: 20px;
 }
 
-.whatbox .bodytext p {
+.whatbox .bodytext p,
+.mobiwhatbox .bodytext p {
 	padding-top: 20px;
+}
+
+.mobiwhatbox {
+	display: none;
 }
 
 .projects {
 	height: auto;
 	max-width: 758px;
 	margin: auto;
-	display: block;
 }
 
 .projects img {
@@ -242,7 +246,6 @@
             0 10px 10px rgba(0,0,0,.2),
             0 20px 20px rgba(0,0,0,.15);
 } 
-
 
 /*------------------------------
 
@@ -322,10 +325,6 @@
 	height: auto;
 	width: 60%;
 	float: left;
-}
-
-.index .descriptimg {
-	display: none;
 }
 
 .sample {

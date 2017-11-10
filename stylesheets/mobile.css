@@ -20,12 +20,16 @@ nav a {
 }
 
 nav img {
-	height: 50px;
+	height: 40px;
 	width: auto;
 }
 
+.footnav {
+	padding-top: 7px;
+}
+
 .footnav img {
-	height: 60px;
+	height: 50px;
 	width: auto;
 }
 
@@ -44,7 +48,7 @@ nav img {
 /*--------- INDEX ------------*/
 
 .introtag h1 {
-	font-size: 2em;
+	font-size: 2.2em;
 }
 
 .poemcon {
@@ -53,14 +57,14 @@ nav img {
 }
 
 .poemcon p {
-	font-size: 0.8em;
+	font-size: 1em;
 }
 
-.projects {
+.whatbox {
 	display: none;
 }
 
-.descriptimg {
+.mobiwhatbox {
 	display: block;
 }
 

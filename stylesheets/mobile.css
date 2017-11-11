@@ -179,15 +179,9 @@ nav img {
 	display: none;
 }
 
-.funfacts li {
-	height: 70px;
+.mobifunfacts li:hover {
+	height: auto;
 }
-
-
-.funfacts li:hover {
-	height: 90px;
-}
-
 
 .mobifunfacts {
 	display: block;

@@ -97,19 +97,140 @@ nav img {
 
 /*--------- WHAT ------------*/
 
+.descriptimg{
+	height: auto;
+	width: 100%;
+	margin: auto;
+	display: block;
+}
+
+.descriptbox{
+	height: auto;
+	max-width: 80%;
+	margin: auto;
+	display: block;
+	float: none;
+}
+
+.descriptbox p {
+	font-size: 1em;
+}
 
 
 /*--------- HOW ------------*/
 
+.magicboxcon {
+	width: 100%;
+}
 
+.skillbox {
+	width: 100%;
+	float: none;
+	display: block;
+}
+
+.skill p {
+	opacity: 0;
+	transition: opacity 0.3 ease;
+}
+
+.magicboxcon:hover .skill p {
+	opacity: 1;
+}
+
+.magicbox {
+	width: 100%;
+	float: none;
+}
+
+.outer {
+	width: 300px;
+}
 
 /*--------- WHO ------------*/
 
+.photobox {
+	display: block;
+	width: 100%;
+	margin: auto;
+	float: none;
+}
 
+.bio {
+	width: 80%;
+	margin: auto;
+	float: none;
+}
+
+.funbox {
+	width: 100%;
+}
+
+.funfacts {
+	display: none;
+}
+
+.mobifunfacts {
+	display: block;
+}
+
+.date {
+	height: 100px;
+	width: 80%;
+	margin: auto;
+	float: none;
+}
+
+.hit {
+	width: 80%;
+	padding: 20px;
+	margin: auto;
+	float: none;
+}
+
+.hit p {
+	font-size: 2em;
+}
+
+.hit:hover {
+	height: 500px;
+}
+
+.hit:hover p {
+	font-size: 1.3em;
+}
 
 /*--------- WHERE ------------*/
 
+.formbox {
+	display: none;
+}
 
+.mobiformbox {
+	width: 90%;
+	margin: auto;
+	display: block;
+}
 
+.mobiformbox p {
+	text-shadow: none;
+	padding-bottom: 15px;
+	text-align: center;
+}
 
+.whowrites {
+	width: 100%;
+}
+
+.writeremail {
+	width: 100%;
+}
+
+.themessage {
+	width: 100%;
+}
+
+input[type="submit"] {
+	border: 3px solid dodgerblue;
+	background-color: dodgerblue;
 }

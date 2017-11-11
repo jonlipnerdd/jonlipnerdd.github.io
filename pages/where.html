@@ -3,9 +3,11 @@
 <head>
 	<meta charset="utf-8">
 	<link rel="icon" type="image/png" href="img/favico.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:700|Cabin:400,400i" rel="stylesheet"> 
 	<link rel="stylesheet" type="text/css" href="../stylesheets/general.css">
 	<link rel="stylesheet" type="text/css" href="../stylesheets/pages.css">
+	<link rel="stylesheet" type="text/css" href="../stylesheets/mobile.css">
 	<title>Dónde</title>
 </head>
 <body class="where">
@@ -43,6 +45,25 @@
 						<input type="email" name="email" value="ejemplo@tumail.com">
 					</div>
 					<div class="themessage left">
+						<p>¿Qué me querés decir?</p>
+						<textarea class="msg" name="message" placeholder="Una palabra a la vez..."></textarea>
+					</div>
+					<div class="submit">
+						<input type="submit" value="ENVIAR">
+					</div>
+				</form>
+			</div>
+			<div class="mobiformbox">
+				<form action="received.html" method="post">
+					<div class="whowrites">
+						<p>¿Quién me escribe?</p>
+						<input type="text" name="name" value="Tu nombre o el nombre de la empresa"/>
+					</div>	
+					<div class="writeremail">
+						<p>¿Adónde tengo que contestar?</p>
+						<input type="email" name="email" value="ejemplo@tumail.com">
+					</div>
+					<div class="themessage">
 						<p>¿Qué me querés decir?</p>
 						<textarea class="msg" name="message" placeholder="Una palabra a la vez..."></textarea>
 					</div>

@@ -97,6 +97,10 @@ nav img {
 
 /*--------- WHAT ------------*/
 
+.carrousample {
+	padding-left: 0;
+}
+
 .descriptimg{
 	height: auto;
 	width: 100%;
@@ -107,6 +111,7 @@ nav img {
 .descriptbox{
 	height: auto;
 	max-width: 80%;
+	padding-top: 10px;
 	margin: auto;
 	display: block;
 	float: none;
@@ -169,6 +174,16 @@ nav img {
 .funfacts {
 	display: none;
 }
+
+.funfacts li {
+	height: 70px;
+}
+
+
+.funfacts li:hover {
+	height: 90px;
+}
+
 
 .mobifunfacts {
 	display: block;
@@ -233,4 +248,21 @@ nav img {
 input[type="submit"] {
 	border: 3px solid dodgerblue;
 	background-color: dodgerblue;
+}
+
+.formcon:hover input[type="submit"] {
+	text-shadow: 0 6px 1px rgba(0,0,0,.1),
+            0 0 5px rgba(0,0,0,.1),
+            0 1px 3px rgba(0,0,0,.3),
+            0 3px 5px rgba(0,0,0,.2),
+            0 5px 10px rgba(0,0,0,.25),
+            0 10px 10px rgba(0,0,0,.2),
+            0 20px 20px rgba(0,0,0,.15);
+	box-shadow: 0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
 }

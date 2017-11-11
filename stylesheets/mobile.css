@@ -97,9 +97,10 @@ nav img {
 
 /*--------- WHAT ------------*/
 
-.carrousample {
-	padding-left: 0;
+.carrousample img {
+	height: 50px;
 }
+
 
 .descriptimg{
 	height: auto;

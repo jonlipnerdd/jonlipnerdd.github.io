@@ -97,26 +97,25 @@ nav img {
 
 /*--------- WHAT ------------*/
 
-.carrousample {
-	padding-left: 0px;
-}
-
 .carrousample img {
 	height: 50px;
 }
 
+.sitebox {
+	width: auto;
+}
 
 .descriptimg{
 	height: auto;
 	width: 100%;
 	margin: auto;
+	margin-bottom: 20px;
 	display: block;
 }
 
 .descriptbox{
 	height: auto;
 	max-width: 80%;
-	margin-top: 10px;
 	margin: auto;
 	display: block;
 	float: none;

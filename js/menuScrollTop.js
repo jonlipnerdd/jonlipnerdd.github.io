@@ -7,4 +7,13 @@ $(document).ready(function () {
 			$(".menu").removeClass("fixed");
 		}
 	});
+
+	$(window).scroll(function () {
+		var s = $(window).scrollTop();	
+		if(s>=100){
+			$(".introtag").addClass("visible");
+		} else {
+			$(".introtag").removeClass("visible");
+		}
+	});
 })

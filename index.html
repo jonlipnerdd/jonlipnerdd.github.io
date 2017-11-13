@@ -28,8 +28,8 @@
 		<div class="introcon">
 			<div class="intro">
 				<div class="poemcon">
-					<p>
-						"Cuando oí al docto astrónomo, cuando las pruebas, las figuras, fueron distribuidas en columnas ante mí, cuando me presentaron los gráficos y diagramas para sumarlos, dividirlos y medirlos, cuando sentado oí al astrónomo en la sala de lectura donde daba su conferencia entre muchos aplausos, cuán pronto e inexplicablemente me sentí cansado y harto; hasta que me levanté y me escabullí para deambular por mi cuenta, en el místico aire húmedo de la noche, y de tanto en tanto, contemplaba en perfecto silencio las estrellas."
+					<p><span class="typed"></span>
+						<!--"Cuando oí al docto astrónomo, cuando las pruebas, las figuras, fueron distribuidas en columnas ante mí, cuando me presentaron los gráficos y diagramas para sumarlos, dividirlos y medirlos, cuando sentado oí al astrónomo en la sala de lectura donde daba su conferencia entre muchos aplausos, cuán pronto e inexplicablemente me sentí cansado y harto; hasta que me levanté y me escabullí para deambular por mi cuenta, en el místico aire húmedo de la noche, y de tanto en tanto, contemplaba en perfecto silencio las estrellas."-->
 					</p>
 				</div>
 				<div class="introtag">
@@ -40,7 +40,7 @@
 		<div class="levelone whobox">
 			<h2>MI NOMBRE ES JONATAN LIPNER...</h2>
 			<div class="bodytext">
-				<p>Soy un diseñador y desarrollador que vive en la Ciudad de Buenos Aires.
+				<p>Soy diseñador y desarrollador web. Vivo en la Ciudad de Buenos Aires.
 					Me apasionan el diseño y la tecnología, pero también el cine, 
 					los cómics, los videojuegos y la literatura.
 					Si querés conocerme mejor, podés preguntarme...
@@ -55,9 +55,7 @@
 					<nav class="indexdev">
 						<ul>
 							<li>
-								<div class="cardcon">
-									<p>PRIMERO</p>
-									<div class="card">
+								<div class="cardcon">									<div class="card">
 										<div class="front">
 											<img src="img/index/stepone.jpg" alt="Tomo nota de tus ideas">
 										</div>
@@ -69,7 +67,6 @@
 							</li>
 							<li>
 								<div class="cardcon">
-									<p>DESPUÉS</p>
 									<div class="card">
 										<div class="front">
 											<img src="img/index/steptwo.jpg" alt="Hago un boceto de tu proyecto">
@@ -82,7 +79,6 @@
 							</li>
 							<li>
 								<div class="cardcon">
-									<p>ENTONCES</p>
 									<div class="card">
 										<div class="front">
 											<img src="img/index/stepthree.jpg" alt="Creo el diseño final en Photoshop">
@@ -104,7 +100,6 @@
 						<ul>
 							<li>
 								<div class="cardcon">
-									<p>CON LO BÁSICO...</p>
 									<div class="card">
 										<div class="front">
 											<img src="img/index/toolone.jpg" alt="HTML5 y CSS3 para el contenido y la forma">
@@ -117,7 +112,6 @@
 							</li>
 							<li>
 								<div class="cardcon">
-									<p>LO MÁGICO...</p>
 									<div class="card">
 										<div class="front">
 											<img src="img/index/tooltwo.jpg" alt="Javascript para darle vida">
@@ -130,7 +124,6 @@
 							</li>
 							<li>
 								<div class="cardcon">
-									<p>Y ADEMÁS...</p>
 									<div class="card">
 										<div class="front">
 											<img src="img/index/toolthree.jpg" alt="Y lo que necesites para destacar">
@@ -147,7 +140,7 @@
 			</div>
 			<div class="bodytext">
 				<p>Si querés saber más sobre mis habilidades,<br>
-				podés preguntarme.</p>
+				podés preguntarme...</p>
 			</div>	
 			<a href="pages/how.html">¿CÓMO TRABAJO?</a>
 		</div>
@@ -161,7 +154,7 @@
 			</div>
 			<div class="bodytext">
 				<p>Hay más historias esperando que las conozcas.<br> 
-			Si querés conocer mi trabajo, preguntarme.</p>
+			Si querés conocer mi trabajo, podes preguntarme...</p>
 			</div>
 			<a href="pages/what.html">¿QUÉ HAGO?</a>	
 		</div>
@@ -184,7 +177,7 @@
 			</div>
 			<div class="bodytext">
 				<p>Hay más historias esperando que las conozcas.<br> 
-			Si querés conocer mi trabajo, preguntarme.</p>
+			Si querés conocer mi trabajo, podés preguntarme.</p>
 			</div>
 			<a href="pages/what.html">¿QUÉ HAGO?</a>	
 		</div>
@@ -216,5 +209,15 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script src="js/javascript.js"></script>
 	<script src='js/select.js'></script>
+	<script src="js/typed.min.js"></script>
+		<script> 
+			var options = {
+				strings: ["'Cuando oí al docto astrónomo,^350 cuando las pruebas,^350 las figuras,^350 fueron distribuidas en columnas ante mí,^350 cuando me presentaron los gráficos y diagramas para sumarlos,^350 dividirlos y medirlos,^350 cuando sentado oí al astrónomo en la sala de lectura donde daba su conferencia entre muchos aplausos,^350 cuán pronto e inexplicablemente me sentí cansado y harto;^350 hasta que me levanté y me escabullí para deambular por mi cuenta,^350 en el místico aire húmedo de la noche,^350 y de tanto en tanto,^350 contemplaba en perfecto silencio las estrellas.'"],
+				typeSpeed: 45,
+				showCursor: false
+			}
+
+			var typed = new Typed(".typed", options);
+</script>
 </body>
 </html> 

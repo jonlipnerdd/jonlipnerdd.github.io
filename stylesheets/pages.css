@@ -53,7 +53,7 @@
 .poemcon p {
 	font-family: 'Cabin', sans-serif;
 	font-style: italic;
-	font-size: 1.1em;
+	font-size: 1.3em;
 	color: #fafafa;
 	text-shadow: 0 6px 1px rgba(0,0,0,.1),
             0 0 5px rgba(0,0,0,.1),
@@ -84,14 +84,14 @@
 }
 
 .design-devbox {
-	height: 250px;
+	height: 320px;
 	max-width: 1120px;
 	margin: auto;
-	background-color: #1f1f8c;
+	background-color: #2929cc;
 }
 
 .desdev-box {
-	height: 250px;
+	height: 320px;
 	width: 0;
 	margin: auto;
 	overflow: hidden;
@@ -123,21 +123,12 @@
 }
 
 .cardcon {
-	height: 250px;
-}
-
-.cardcon p {
+	height: 300px;
 	padding-top: 10px;
-	padding-bottom: 10px;
-	text-align: center;
-	font-family: 'Montserrat', sans-serif;
-	color: #fafafa;
-	font-size: 1.1em;
-	text-shadow: none;
 }
 
 .card {
-	height: 200px;
+	height: 300px;
 	width: 200px;
 	margin: auto;
 	transform-style: preserve-3d;
@@ -145,23 +136,23 @@
 }
 
 .front {
-	background-color: #2525a8;
+	background-color: #1f1f33;
 }
 
 .front img {
-	height: 200px;
+	height: 300px;
 	width: 200px;
-	border-radius: 10px;
+	border-radius: 3px;
 }
 
 .back {
-	background-color: #2525a8;
+	background-color: #1f1f33;
 }
 
 .back img {
-	height: 200px;
+	height: 300px;
 	width: 200px;
-	border-radius: 10px;
+	border-radius: 3px;
 }
 
 
@@ -287,7 +278,7 @@
 	max-width: 600px;
 	z-index: 25;
 	position: relative;
-	background-color: #2525a8;
+	background-color: #2929cc;
 }
 
 .carrousample {
@@ -324,7 +315,24 @@
 	height: auto;
 	max-width: 1120px;
 	overflow: auto;
-	background-color: #1f1f8c;
+	background-color: #1f1f33;
+}
+
+.title {
+	position: absolute;
+	display: none;
+	transition: all 0.5 ease;
+}
+
+.title.selected {
+	position: relative;
+	display: block;	
+}
+
+.descriptbox {
+	height: auto;
+	max-width: 900px;
+	margin: auto;
 }
 
 .descriptimg{
@@ -394,16 +402,27 @@
             0 20px 20px rgba(0,0,0,.15);
 }
 
-.descriptbox{
+.descripttext{
 	height: auto;
 	max-width: 40%;
 	float: right;
+}
+
+.descript {
+	position: absolute;
+	display: none;
+	transition: all 0.5 ease;
 }
 
 .descript p {
 	text-shadow: none;
 	text-align: justify;
 	padding: 30px;
+}
+
+.descript.selected {
+	position: relative;
+	display: block;	
 }
 
 
@@ -443,7 +462,6 @@
 }
 
 /*------------ SKILLS/TOOLS -------------*/
-
 
 .magicboxcon {
 	height: auto;
@@ -487,7 +505,7 @@
     color: #fafafa;
     text-align: center;
     position: relative;
-    font-size: 17px;
+    font-size: 1.2em;
     padding: 10px;
     margin: 20px 0 0 0
 }
@@ -495,7 +513,7 @@
 .skill p {
     font-family: Georgia, serif;
     font-style: italic;
-    font-size: 12px;
+    font-size: 1em;
     position: relative;
     color: #fff;
     padding: 10px 20px 20px;
@@ -627,6 +645,7 @@
 .magicbox {
 	height: auto;
 	width: 49.5%;
+	background-color: #1f1f33;
 }
 
 .magicbox:hover h3 {
@@ -828,7 +847,7 @@
 	padding-bottom: 20px;
 	z-index: 25;
 	clear: both;
-	background-color: #2525a8;
+	background-color: #2929cc;
 }
 
 
@@ -948,8 +967,9 @@
 }
 
 .bio p  {
-	padding: 30px;
-	margin-top: 21%;
+	padding-left: 30px;
+	padding-bottom: 30px;
+	padding-right: 30px;
 	text-shadow: none;
 	text-align: justify;	
 }
@@ -961,7 +981,7 @@
 	max-width: 1040px;
 	padding-bottom: 0;
 	z-index: 25;
-	background-color: #2525a8;
+	background-color: #2929cc;
 }
 
 .funcon p {
@@ -981,33 +1001,31 @@
 .funfacts {
 	margin: auto;
 	padding: 8px;
+	flex-direction: row;
 }
 
 .funfacts li {
-	height: 50px;
+	height: auto;
+	margin: 5px;
 	transition: box-shadow 0.5s ease;
 }
 
 .funfacts p {
-	transition: all 0.5s ease;
-}
-
-.funfacts li:hover {
-	background-color: #fafafa;
-	box-shadow: 
-  			0 6px 1px rgba(0,0,0,.1),
-            0 0 5px rgba(0,0,0,.1),
-            0 1px 3px rgba(0,0,0,.3),
-            0 3px 5px rgba(0,0,0,.2),
-            0 5px 10px rgba(0,0,0,.25),
-            0 10px 10px rgba(0,0,0,.2),
-            0 20px 20px rgba(0,0,0,.15);
+	font-family: 'Montserrat', sans-serif;
+	color: #fafafa;
+	font-size: 1em;
+	text-transform: uppercase;
+	transition: text-shadow 0.5s ease;
 }
 
 .funfacts li:hover p {
-	color: #2525a8;
-	font-size: 1.1em;
-	text-transform: uppercase;
+	text-shadow: 0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
 }
 
 .mobifunfacts {
@@ -1017,30 +1035,28 @@
 }
 
 .mobifunfacts li {
-	height: 50px;
+	height: auto;
+	width: 100px;
+	margin: 5px;
 	transition: box-shadow 0.5s ease;
 }
 
 .mobifunfacts p {
-	transition: all 0.5s ease;
-}
-
-.mobifunfacts li:hover {
-	background-color: #fafafa;
-	box-shadow: 
-  			0 6px 1px rgba(0,0,0,.1),
-            0 0 5px rgba(0,0,0,.1),
-            0 1px 3px rgba(0,0,0,.3),
-            0 3px 5px rgba(0,0,0,.2),
-            0 5px 10px rgba(0,0,0,.25),
-            0 10px 10px rgba(0,0,0,.2),
-            0 20px 20px rgba(0,0,0,.15);
+	font-family: 'Montserrat', sans-serif;
+	color: #fafafa;
+	font-size: 1em;
+	text-transform: uppercase;
+	transition: text-shadow 0.5s ease;
 }
 
 .mobifunfacts li:hover p {
-	color: #2525a8;
-	font-size: 1.1em;
-	text-transform: uppercase;
+	text-shadow: 0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
 }
 
 .facts p {
@@ -1053,6 +1069,7 @@
 .historybox {
 	height: auto;
 	max-width: 960px;
+	background-color: #1f1f33;
 }
 
 .hitbox {
@@ -1064,37 +1081,77 @@
 }
 
 .date {
-	height: 100px;
+	height: 60px;
 	width: 20%;
 	float: left;
 	background-color: #2525a8;
 }
 
 .date p {
-	line-height: 100px;
-	font-size: 200%;
+	line-height: 60px;
+	font-size: 150%;
 }
 
 .hit {
-	height: 100px;
+	height: 60px;
 	width: 78%;
-	padding: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
 	float: right;
 	overflow: hidden;
 	background-color: dodgerblue;
-	transition: height 1s ease;
+	transition: height 0.5s ease;
 }
 
-.hit p {
+.hittitle {
+	display: block
+}
+
+.hittitle h3 {
+	font-size: 1.5em;
+	float: left;
+	padding-top: 15px;
+}
+
+.hit img {
+	height: 50px;
+	width: 50px;
+	float: right;
+	padding-top: 12px;
+	transition: transform 0.5s ease;
+
+}
+
+.hittext {
+	clear: both;
+}
+
+.hittext p {
 	color: #fafafa;
-	font-size: 200%;
+	font-size: 100%;
 	text-shadow: none;
 	text-align: justify;
 	transition: font-size 0.6s ease;
 }
 
-.hit:hover {
-	height: 300px;
+#hitone:hover, 
+#hitfour:hover, 
+#hitfive:hover {
+	height: 170px;
+}
+
+#hittwo:hover, #hitthree:hover  {
+	height: 150px;
+}
+
+#hitsix:hover {
+	height: 190px;
+}
+
+
+
+.hit:hover img {
+	transform: rotate(-90deg);
 }
 
 .hit:hover p {
@@ -1131,10 +1188,6 @@
 }
 
 /*------------- FORM -------------*/
-
-.formcon {
-	margin-top: 30px;
-}
 
 .formbox {
 	width: 80%;

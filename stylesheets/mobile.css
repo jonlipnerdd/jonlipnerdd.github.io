@@ -66,7 +66,7 @@ nav img {
 }
 
 .design-devbox, .desdev-box {
-	height: 800PX;
+	height: 970px;
 }
 
 .desdev-box {
@@ -84,6 +84,10 @@ nav img {
 .indexdev {
 	max-width: 200px;
 	padding-top: 900px;
+}
+
+.cardcon {
+	margin-bottom: 20px;
 }
 
 .whatbox {
@@ -113,12 +117,12 @@ nav img {
 	display: block;
 }
 
-.descriptbox{
+.descripttext{
 	height: auto;
-	max-width: 80%;
+	max-width: 100%;
 	margin: auto;
 	display: block;
-	float: none;
+	float: left;
 }
 
 .descriptbox p {
@@ -171,8 +175,13 @@ nav img {
 	float: none;
 }
 
+.bio p {
+	text-align: center;
+}
+
 .funbox {
 	width: 100%;
+	padding-bottom: 20px;
 }
 
 .funfacts {
@@ -183,12 +192,16 @@ nav img {
 	height: auto;
 }
 
+.mobifunfacts li:hover p {
+	padding-bottom: 5px;
+}
+
 .mobifunfacts {
 	display: block;
 }
 
 .date {
-	height: 100px;
+	height: 60px;
 	width: 80%;
 	margin: auto;
 	float: none;
@@ -201,16 +214,31 @@ nav img {
 	float: none;
 }
 
-.hit p {
-	font-size: 2em;
+.hit img {
+	display: none;
 }
 
-.hit:hover {
-	height: 500px;
+#hitfour {
+	height: 80px;
 }
 
-.hit:hover p {
-	font-size: 1.3em;
+.hittitle h3 {
+	font-size: 1em;
+	padding-top: 5px;
+}
+
+#hitone:hover, 
+#hitfour:hover, 
+#hitfive:hover {
+	height: 280px;
+}
+
+#hittwo:hover, #hitthree:hover  {
+	height: 250px;
+}
+
+#hitsix:hover {
+	height: 290px;
 }
 
 /*--------- WHERE ------------*/

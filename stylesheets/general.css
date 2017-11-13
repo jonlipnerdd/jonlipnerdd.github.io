@@ -89,7 +89,7 @@ header {
 .container {
 	height: auto;
 	max-width: 100%;
-	background-color: #000229;
+	background-color: #000226;
 }
 
 .container a {
@@ -117,14 +117,14 @@ header {
 	margin: auto;
 	padding-bottom: 40px;
 	position: relative;
-	background-color: midnightblue;
+	background-color: #0d1459;
 }
 
 .leveltwo {
 	margin: auto;
 	padding-bottom: 40px;
 	position: relative;
-	background-color: #1f1f8c;
+	background-color: #2929cc;/*#171b4d*/
 	z-index: 20;
 	-moz-box-shadow: 
 	0 6px 1px rgba(0,0,0,.1),
@@ -176,7 +176,7 @@ header {
 .levelthree {
 	margin: auto;
 	position: relative;
-	background-color: #2525a8;
+	background-color: #1f1f33;
 	box-shadow: 0 6px 1px rgba(0,0,0,.1),
                0 0 5px rgba(0,0,0,.1),
                0 1px 3px rgba(0,0,0,.3),
